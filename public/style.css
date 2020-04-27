@@ -11,7 +11,7 @@
     --color-one: #587850;
     --color-two: #f8d0b0;
     --color-three: #709078;
-    --color-four: '#78b0a0'
+    --color-four: #3f7767;
 }
 
 #root {
@@ -19,9 +19,29 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     min-height: 100vh;
     line-height: 1.6;
     background-color: var(--color-one);
     color: var(--color-two);
     box-shadow: var(--color-three);
+}
+
+#input-text {
+    font-family: 'Cousine', monospace;
+    color: var(--color-two);
+    background-color: var(--color-three);
+    width: 50vw;
+    max-width: 700px;
+    padding: 10px;
+    border: none;
+    margin: 10px;
+}
+
+#submit-button {
+    font-family: 'Cousine', monospace;
+    color: var(--color-two);
+    background-color: var(--color-four);
+    padding: 10px;
+    margin: 10px;
 }
