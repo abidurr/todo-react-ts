@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Cousine&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --color-one: #587850;
+    --color-two: #f8d0b0;
+    --color-three: #709078;
+    --color-four: '#78b0a0'
+}
+
+#root {
+    font-family: 'Cousine', monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--color-one);
+    color: var(--color-two);
+    box-shadow: var(--color-three);
+}
