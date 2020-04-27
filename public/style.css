@@ -22,20 +22,21 @@
     flex-direction: column;
     min-height: 100vh;
     line-height: 1.6;
-    background-color: var(--color-one);
+    background-image: linear-gradient(var(--color-one), var(--color-four));
+ 
     color: var(--color-two);
-    box-shadow: var(--color-three);
 }
 
 #input-text {
     font-family: 'Cousine', monospace;
     color: var(--color-two);
     background-color: var(--color-three);
-    width: 50vw;
+    width: 45vw;
     max-width: 700px;
     padding: 10px;
     border: none;
     margin: 10px;
+    border-radius: 5px;
 }
 
 #submit-button {
@@ -44,6 +45,7 @@
     background-color: var(--color-four);
     padding: 10px;
     margin: 10px;
+    border-radius: 5px;
 }
 
 .button-delete {
@@ -52,4 +54,5 @@
     background-color: var(--color-four);
     padding: 5px 10px;
     margin: 5px;
+    border-radius: 5px;
 }
