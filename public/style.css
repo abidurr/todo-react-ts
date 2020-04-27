@@ -45,3 +45,11 @@
     padding: 10px;
     margin: 10px;
 }
+
+.button-delete {
+    font-family: 'Cousine', monospace;
+    color: var(--color-two);
+    background-color: var(--color-four);
+    padding: 5px 10px;
+    margin: 5px;
+}

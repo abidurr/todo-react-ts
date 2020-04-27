@@ -5,11 +5,13 @@ interface TodoListItemProps {
   toggleComplete: ToggleComplete;
 }
 
+
 export const TodoListItem: React.FC<TodoListItemProps> = ({
   todo,
   toggleComplete
 }) => {
   return (
+    
     <li>
       <label style={{textDecoration : todo.complete ? "line-through" : "none"}}>
         <input
@@ -20,6 +22,7 @@ export const TodoListItem: React.FC<TodoListItemProps> = ({
         />
         {todo.text}
       </label>
+      <button className="button-delete">x</button>
     </li>
   );
 };

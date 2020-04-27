@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import { initialTodos } from "./initialTodos";
+import React from "react";
 import { TodoList } from "./TodoList";
 import { AddTodoForm } from "./AddTodoForm";
+import useLocalStorageState from 'use-local-storage-state'
 
 const App: React.FC = () => {
-  const [todos, setTodos] = useState<Array<Todo>>(initialTodos);
+  const [todos, setTodos] = useLocalStorageState<Array<Todo>>('todos', []);
 
   const toggleComplete: ToggleComplete = selectedTodo => {
     const updatedTodos = todos.map(todo => {
