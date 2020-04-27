@@ -20,6 +20,7 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    line-height: 1.6;
     background-color: var(--color-one);
     color: var(--color-two);
     box-shadow: var(--color-three);
