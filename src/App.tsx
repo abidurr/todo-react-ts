@@ -31,7 +31,7 @@ const App: React.FC = () => {
 
   return (
     <React.Fragment>
-      <h1>To Do App</h1>
+      <h1>To-Do List</h1>
       <AddTodoForm addTodo={addTodo} />
       <TodoList todos={todos} toggleComplete={toggleComplete} />
       <button id="submit-button" onClick={deleteCompleted}>Delete Completed</button>
