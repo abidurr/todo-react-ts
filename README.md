@@ -1,6 +1,6 @@
 # Todo App
 
-##A simple todo list app built with React and TS.
+## A simple todo list app built with React and TS.
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
