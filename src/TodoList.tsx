@@ -12,9 +12,9 @@ export const TodoList: React.FC<TodoListProps> = ({
 }) => {
   return (
     <ul>
-      {todos.map(todo => (
+      {todos.map((todo, i) => (
         <TodoListItem
-          key={todo.text}
+          key={i}
           todo={todo}
           toggleComplete={toggleComplete}
         />

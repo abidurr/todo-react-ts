@@ -21,7 +21,7 @@ export const AddTodoForm: React.FC<AddTodoFormProps> = ({ addTodo }) => {
     <form>
       <input id="input-text" type="text" autoFocus value={newTodo} onChange={handleChange} />
       <button id="submit-button" type="submit" onClick={handleSubmit}>
-        Add To Do
+        Add New To-Do
       </button>
     </form>
   );

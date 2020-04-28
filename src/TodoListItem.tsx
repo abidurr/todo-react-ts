@@ -20,7 +20,6 @@ export const TodoListItem: React.FC<TodoListItemProps> = ({
         />
         {todo.text}
       </label>
-      <button className="button-delete">x</button>
     </li>
   );
 };
