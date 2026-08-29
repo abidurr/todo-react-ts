@@ -7,19 +7,33 @@ interface TodoListItemProps {
 
 export const TodoListItem: React.FC<TodoListItemProps> = ({
   todo,
-  toggleComplete
+  toggleComplete,
 }) => {
   return (
-    <li>
-      <label style={{textDecoration : todo.complete ? "line-through" : "none"}}>
-        <input
-          type="checkbox"
-          style={{display:"none"}}
-          onChange={() => toggleComplete(todo)}
-          checked={todo.complete}
+    <div className="list-item-div">
+      <div className="check-button" onClick={() => toggleComplete(todo)}>
+        <div
+          className="check-button-inner"
+          style={{
+            backgroundColor: todo.complete
+              ? "var(--color-four)"
+              : "var(--color-five)",
+          }}
         />
-        {todo.text}
-      </label>
-    </li>
+      </div>
+      <li>
+        <label
+          style={{ textDecoration: todo.complete ? "line-through" : "none" }}
+        >
+          <input
+            type="checkbox"
+            style={{ display: "none" }}
+            onChange={() => toggleComplete(todo)}
+            checked={todo.complete}
+          />
+          {todo.text}
+        </label>
+      </li>
+    </div>
   );
 };

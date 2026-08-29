@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Cousine&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cousine&display=swap");
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
 }
 
 :root {
@@ -12,10 +11,11 @@
     --color-two: #f8d0b0;
     --color-three: #709078;
     --color-four: #3f7767;
+    --color-five: #f8b090;
 }
 
 #root {
-    font-family: 'Cousine', monospace;
+    font-family: "Cousine", monospace;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,12 +23,12 @@
     min-height: 100vh;
     line-height: 1.6;
     background-image: linear-gradient(var(--color-one), var(--color-four));
- 
+
     color: var(--color-two);
 }
 
 #input-text {
-    font-family: 'Cousine', monospace;
+    font-family: "Cousine", monospace;
     color: var(--color-two);
     background-color: var(--color-three);
     width: 45vw;
@@ -40,10 +40,42 @@
 }
 
 #submit-button {
-    font-family: 'Cousine', monospace;
+    font-family: "Cousine", monospace;
     color: var(--color-two);
     background-color: var(--color-four);
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
+}
+
+.check-button {
+    width: 32px;
+    height: 32px;
+    margin: 12px;
+    border-radius: 15px;
+    background-color: var(--color-two);
+    padding: 4px;
+}
+
+.check-button-inner {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: var(--color-one);
+    box-shadow: inset 0 2px 2px hsla(0, 0%, 0%, 0.1);
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.list-item-div {
+    display: flex;
+    align-items: center;
+}
+
+.todo-list {
+    margin: 32px 0px;
+    width: 45vw;
+    max-width: 700px;
 }
